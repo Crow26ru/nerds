@@ -14,7 +14,7 @@ gulp.task('css', function () {
     .pipe(postcss([
       autoprefixer()
     ]))
-    .pipe(gulp.dest('sourse/css'))
+    .pipe(gulp.dest('source/css'))
     .pipe(server.stream());
 });
 
