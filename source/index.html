@@ -3,8 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>Нёрдс - Главня</title>
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=5ad3d2da-a805-4804-8f05-9b55b9d96ed6&lang=ru_RU" type="text/javascript">
-    </script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=5ad3d2da-a805-4804-8f05-9b55b9d96ed6&lang=ru_RU"></script>
   </head>
   <body>
     <header class="header">
@@ -21,7 +20,7 @@
             <a class="pages-list__link" href="#">Клиенты</a>
           </li>
           <li class="pages-list__item">
-            <a class="pages-list__link" href="#">Магазин</a>
+            <a class="pages-list__link" href="catalog.html">Магазин</a>
           </li>
           <li class="pages-list__item">
             <a class="pages-list__link" href="#">Контакты</a>
@@ -193,6 +192,27 @@
         </div>
       </section>
     </footer>
+    <section class="popup visually-hidden">
+      <h2 class="popup__title">Напишите нам</h2>
+      <button type="button"><span class="visually-hidden">Закрыть</span></button>
+      <form action="" class="popup__form">
+        <div class="popup__wrapper">
+          <div class="popup__name name">
+            <label for="name" class="name__label">Ваше имя:</label>
+            <input type="text" class="name__input" id="name" name="name" placeholder="Имя Фамилия">
+          </div>
+          <div class="popup__email email">
+            <label for="email" class="email__label">Ваш e-mail:</label>
+            <input type="email" class="email__input" id="email" name="email" placeholder="email@example.com">
+          </div>
+        </div>
+        <div class="popup__wrapper comment">
+          <label for="comment" class="comment__label"></label>
+          <textarea class="comment__text" id="commnet" placeholder="В свободной форме"></textarea>
+        </div>
+        <button class="popup__submit" type="submit">Отправить</button>
+      </form>
+    </section>
     <script src="js/map.js"></script>
   </body>
 </html>
