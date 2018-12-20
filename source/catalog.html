@@ -207,7 +207,7 @@
         </section>
       </section>
       <section class="footer__social social">
-        <h2 class="social__title">Наши группы в социальных сетях</h2>
+        <h2 class="social__title visually-hidden">Наши группы в социальных сетях</h2>
         <ul class="social__social-list social-list">
           <li class="social-list__item">
             <a href="" class="social-list__link">
@@ -234,22 +234,22 @@
     <section class="popup visually-hidden">
       <h2 class="popup__title">Напишите нам</h2>
       <button type="button"><span class="visually-hidden">Закрыть</span></button>
-      <form action="" class="popup__form">
+      <form action="#" class="popup__form" method="post">
         <div class="popup__wrapper">
           <div class="popup__name name">
-            <label for="name" class="name__label">Ваше имя:</label>
-            <input type="text" class="name__input" id="name" name="name" placeholder="Имя Фамилия">
+            <label for="name" class="popup__label">Ваше имя:</label>
+            <input type="text" class="popup__input" id="name" name="name" placeholder="Имя Фамилия">
           </div>
           <div class="popup__email email">
-            <label for="email" class="email__label">Ваш e-mail:</label>
-            <input type="email" class="email__input" id="email" name="email" placeholder="email@example.com">
+            <label for="email" class="popup__label">Ваш e-mail:</label>
+            <input type="email" class="popup__input" id="email" name="email" placeholder="email@example.com">
           </div>
         </div>
         <div class="popup__wrapper comment">
-          <label for="comment" class="comment__label"></label>
-          <textarea class="comment__text" id="commnet" placeholder="В свободной форме"></textarea>
+          <label for="comment" class="popup__label"></label>
+          <textarea class="popup__text" id="commnet" placeholder="В свободной форме"></textarea>
         </div>
-        <button class="popup__submit" type="submit">Отправить</button>
+        <button class="btn popup__submit" type="submit">Отправить</button>
       </form>
     </section>
     <script src="js/map.js"></script>

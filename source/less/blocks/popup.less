@@ -1,0 +1,31 @@
+@popupTextColor: #000000;
+
+.popup__title {
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 45px;
+  color: @popupTextColor;
+}
+
+.popup__label {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  color: @popupTextColor;
+}
+
+.popup__submit {
+  display: block;
+  border: none;
+  padding: 18px 0;
+  width: 260px;
+}
+
+.popup__input,
+.popup__text {
+  &::placeholder {
+    font-size: 16px;
+    line-height: 18px;
+    color: fade(#444444, 50%);
+  }
+}

@@ -1,0 +1,45 @@
+.btn {
+  line-height: 18px;
+  text-transform: uppercase;
+  color: @btnTextColor;
+  text-align: center;
+
+  background-color: @linkHover;
+
+  &:hover,
+  &:focus {
+    color: @btnTextColor;
+    background-color: @btnBgColorHover;
+  }
+
+  &:active {
+    color: @btnTextActive;
+    background-color: @btnBgColorActive;
+  }
+
+  &--app {
+    background-color: @btnBgColorApp;
+
+    &:hover,
+    &:focus {
+      background-color: @btnBgColorHoverApp;
+    }
+
+    &:active {
+      background-color: @btnBgColorActiveApp;
+    }
+  }
+
+  &--presentaion {
+    background-color: @btnBgColorPresentaion;
+
+    &:hover,
+    &:focus {
+      background-color: @btnBgColorHoverPresentaion;
+    }
+
+    &:active {
+      background-color: @btnBgColorActivePresentaion;
+    }
+  }
+}

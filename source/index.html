@@ -42,23 +42,23 @@
             <section class="slider__description">
               <b class="slider__title">Долго, дорого, скурпулезно.</b>
               <p class="slider__text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-              <a class="slider__link" href="#">Узнать больше</a>
+              <a class="btn slider__link" href="#">Узнать больше</a>
             </section>
             <img class="slider__img slider__img--img-1" src="img/slide1.png" width="698" height="571" alt="Смартфоны">
           </li>
-          <li class="slider__item">
+          <li class="slider__item visually-hidden">
             <section class="slider__description">
               <b class="slider__title">Любим математику как никто другой</b>
               <p class="slider__text">Никакого креатива, только математические формулы для рассчета идеальных пропорций.</p>
-              <a class="slider__link" href="#">Узнать больше</a>
+              <a class="btn slider__link" href="#">Узнать больше</a>
             </section>
             <img class="slider__img slider__img--img-2" src="img/slide2.png" width="663" height="430" alt="Моноблоки">
           </li>
-          <li class="slider__item">
+          <li class="slider__item visually-hidden">
             <section class="slider__description">
               <b class="slider__title">Только ночь, только хардкор</b>
               <p class="slider__text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-              <a class="slider__link" href="#">Узнать больше</a>
+              <a class="btn slider__link" href="#">Узнать больше</a>
             </section>
             <img class="slider__img slider__img--img-3" src="img/slide3.png" width="759" height="411" alt="Мобильные устройства">
           </li>
@@ -70,17 +70,17 @@
           <li class="services__service service">
             <h3 class="service__title">Веб-сайты</h3>
             <p class="service__description">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-            <a href="#" class="service__link">Заказать</a>
+            <a href="#" class="service__link btn">Заказать</a>
           </li>
           <li class="services__service service">
             <h3 class="service__title">Приложения</h3>
             <p class="service__description">Покорите топ-10 приложений в AppStore и Google Play</p>
-            <a href="#" class="service__link">Заказать</a>
+            <a href="#" class="service__link btn btn--app">Заказать</a>
           </li>
           <li class="services__service service">
             <h3 class="service__title">Презентации</h3>
             <p class="service__description">Вы даже не подозреваете, насколько вы изумительны!</p>
-            <a href="#" class="service__link">Заказать</a>
+            <a href="#" class="service__link btn btn--presentaion">Заказать</a>
           </li>
         </ul>
       </section>
@@ -101,25 +101,25 @@
           <p class="description__us">С 2004 года любим точность во всем:</p>
           <ul class="description__features features">
             <li class="features__item">
-              <p class="features__text">
+              <p class="features__data">
                 <span class="features__value">146</span>
                 <span class="features__percent">%</span>
-                <span class="features__text">Уровень самоотдачи</span>
               </p>
+              <p class="features__text">Уровень самоотдачи</p>
             </li>
             <li class="features__item">
-              <p class="features__text">
+              <p class="features__data">
                 <span class="features__value">100</span>
                 <span class="features__percent">%</span>
-                <span class="features__text">Соблюдение сроков</span>
               </p>
+              <p class="features__text">Соблюдение сроков</p>
             </li>
             <li class="features__item">
-              <p class="features__text">
+              <p class="features__data">
                 <span class="features__value">50</span>
                 <span class="features__percent">%</span>
-                <span class="features__text">Минимальная предоплата</span>
               </p>
+              <p class="features__text">Минимальная предоплата</p>
             </li>
           </ul>
         </div>
@@ -168,11 +168,11 @@
             <span class="phone__prefix">тел.</span>
             <a class="phone__number" href="tel:+78122757575">+7 (812) 275-75-75</a>
           </p>
-          <a class="contacts__write-us" href="#">Напишите нам</a>
+          <a class="btn contacts__write-us" href="#">Напишите нам</a>
         </section>
       </section>
       <section class="footer__social social">
-        <h2 class="social__title">Наши группы в социальных сетях</h2>
+        <h2 class="social__title visually-hidden">Наши группы в социальных сетях</h2>
         <ul class="social__social-list social-list">
           <li class="social-list__item">
             <a href="" class="social-list__link">
@@ -199,22 +199,22 @@
     <section class="popup visually-hidden">
       <h2 class="popup__title">Напишите нам</h2>
       <button type="button"><span class="visually-hidden">Закрыть</span></button>
-      <form action="" class="popup__form">
+      <form action="#" class="popup__form" method="post">
         <div class="popup__wrapper">
           <div class="popup__name name">
-            <label for="name" class="name__label">Ваше имя:</label>
-            <input type="text" class="name__input" id="name" name="name" placeholder="Имя Фамилия">
+            <label for="name" class="popup__label">Ваше имя:</label>
+            <input type="text" class="popup__input" id="name" name="name" placeholder="Имя Фамилия">
           </div>
           <div class="popup__email email">
-            <label for="email" class="email__label">Ваш e-mail:</label>
-            <input type="email" class="email__input" id="email" name="email" placeholder="email@example.com">
+            <label for="email" class="popup__label">Ваш e-mail:</label>
+            <input type="email" class="popup__input" id="email" name="email" placeholder="email@example.com">
           </div>
         </div>
         <div class="popup__wrapper comment">
-          <label for="comment" class="comment__label"></label>
-          <textarea class="comment__text" id="commnet" placeholder="В свободной форме"></textarea>
+          <label for="comment" class="popup__label"></label>
+          <textarea class="popup__text" id="commnet" placeholder="В свободной форме"></textarea>
         </div>
-        <button class="popup__submit" type="submit">Отправить</button>
+        <button class="btn popup__submit" type="submit">Отправить</button>
       </form>
     </section>
     <script src="js/map.js"></script>
