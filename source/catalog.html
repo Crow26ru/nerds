@@ -39,7 +39,7 @@
         <h2 class="visually-hidden">Фильтр шаблонов</h2>
         <form class="list__filter filter" action="#" method="post">
           <fieldset class="filter__cost cost">
-            <legend class="cost__title">Стоимость:</legend>
+            <legend class="cost__title legend-catalog">Стоимость:</legend>
             <div class="cost__range range">
               <div class="range__full-bar"></div>
               <div class="range__value"></div>
@@ -54,7 +54,7 @@
             </div>
           </fieldset>
           <fieldset class="list__grid grid">
-            <legend class="grid__title">Сетка:</legend>
+            <legend class="grid__title legend-catalog">Сетка:</legend>
             <p class="grid__container container">
               <input type="radio" class="visually-hidden" id="adaptive" name="grid" value="adaptive" checked>
               <span class="container__custom-radio"></span>
@@ -72,7 +72,7 @@
             </p>
           </fieldset>
           <fieldset class="list__details details">
-            <legend class="details__title">Особенности:</legend>
+            <legend class="details__title legend-catalog">Особенности:</legend>
             <p class="details__container container">
               <input type="checkbox" class="visually-hidden" id="slider" name="slider" checked>
               <span class="container__custom-checkbox"></span>
@@ -103,9 +103,9 @@
         </form>
         <form action="#" class="list__filter filter">
           <fieldset class="filter__sort sort">
-            <legend class="sort__title">Сортировать:</legend>
+            <legend class="sort__title legend-catalog">Сортировать:</legend>
             <p class="sort__container container">
-              <a href="#" class="sort__link">По цене</a>
+              <a class="sort__link sort__link--active">По цене</a>
               <a href="#" class="sort__link">По типу</a>
               <a href="#" class="sort__link">По названию</a>
               <a href="#" class="sort__value">
@@ -179,7 +179,7 @@
               <a class="paginator__page paginator__page--active">1</a>
               <a href="" class="paginator__page">2</a>
               <a href="" class="paginator__page">3</a>
-              <a href="" class="paginator__next">Следующая</a>
+              <a href="" class="paginator__page paginator__page--next">Следующая</a>
             </div>
           </fieldset>
         </form>
