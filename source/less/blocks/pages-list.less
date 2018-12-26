@@ -1,9 +1,17 @@
 .pages-list {
   display: flex;
-  justify-content: space-between;
   margin: 0;
   padding: 0;
   width: 440px;
 
   list-style: none;
+}
+
+.pages-list__item {
+  margin-right: 46px;
+  padding-top: 29px;
+
+  &:nth-of-type(4n+n) {
+    margin-right: 0;
+  }
 }
