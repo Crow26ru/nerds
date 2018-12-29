@@ -42,37 +42,57 @@
         <div class="page-wrapper">
           <h2 class="visually-hidden">Преимущества</h2>
           <ul class="slider__list">
-            <li class="slider__item visually-hidden">
+            <li class="slider__item slider__item--slide1">
               <section class="slider__description">
-                <b class="slider__title">Долго, дорого, скрупулезно.</b>
-                <p class="slider__text">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+                <b class="slider__title slider__title--slide1">Долго, дорого, скрупулезно.</b>
+                <p class="slider__text slider__text--slide1">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
                 <a class="btn slider__link" href="#">Узнать больше</a>
               </section>
+              <!--Переведём на фоновое изображение
               <div class="slider__image-container">
                 <img class="slider__img slider__img--img-1" src="img/slide1.png" width="698" height="413" alt="Смартфоны">
               </div>
+              -->
             </li>
             <li class="slider__item slider__item--slide2 visually-hidden">
               <section class="slider__description slider__description--slide2">
-                <b class="slider__title">Любим математику как никто другой</b>
+                <b class="slider__title slider__title--slide2">Любим математику как никто другой</b>
                 <p class="slider__text slider__text--slide2">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-                <a class="btn slider__link" href="#">Узнать больше</a>
+                <a class="btn slider__link slider__link--slide2" href="#">Узнать больше</a>
               </section>
+              <!--
               <div class="slider__image-container">
                 <img class="slider__img slider__img--img-2" src="img/slide2.png" width="663" height="430" alt="Моноблоки">
               </div>
+              -->
             </li>
-            <li class="slider__item slider__item--slide3">
+            <li class="slider__item slider__item--slide3 visually-hidden">
               <section class="slider__description">
-                <b class="slider__title">Только ночь, только хардкор</b>
-                <p class="slider__text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+                <b class="slider__title slider__title--slide3">Только ночь, только хардкор</b>
+                <p class="slider__text slider__text--slide3">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
                 <a class="btn slider__link" href="#">Узнать больше</a>
               </section>
+              <!--
               <div class="slider__image-container">
                 <img class="slider__img slider__img--img-3" src="img/slide3.png" width="759" height="411" alt="Мобильные устройства">
               </div>
+              -->
             </li>
           </ul>
+          <section class="slider__controller">
+            <input class="slider__btn visually-hidden" id="slide1-control" type="radio" name="slider-control" value="slide1" checked>
+            <label class="slider__control slider__control--slide1" for="slide1-control">
+              <span></span>
+            </label>
+            <input class="slider__btn visually-hidden" id="slide2-control" type="radio" name="slider-control" value="slide2">
+            <label class="slider__control slider__control--slide2" for="slide2-control">
+              <span></span>
+            </label>
+            <input class="slider__btn visually-hidden" id="slide3-control" type="radio" name="slider-control" value="slide3">
+            <label class="slider__control slider__control--slide3" for="slide3-control">
+              <span></span>
+            </label>
+          </section>
         </div>
       </section>
       <section class="content__services services">
@@ -233,7 +253,7 @@
           </div>
         </div>
         <div class="popup__wrapper comment">
-          <label for="comment" class="popup__label"></label>
+          <label for="comment" class="popup__label">Текст письма:</label>
           <textarea class="popup__text" id="commnet" placeholder="В свободной форме"></textarea>
         </div>
         <button class="btn popup__submit" type="submit">Отправить</button>
