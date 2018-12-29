@@ -1,10 +1,19 @@
 .features {
   display: flex;
-  justify-content: space-around;
   margin: 0;
+  margin-top: 25px;
   padding: 0;
 
   list-style: none;
+}
+
+.features__item {
+  width: 110px;
+  margin-right: 9px;
+
+  &:nth-of-type(3n + 3) {
+    margin-right: 0;
+  }
 }
 
 .features__value {
@@ -14,7 +23,15 @@
 }
 
 .features__percent {
+  margin-left: -4px;
+
   font-weight: 700;
-  font-size: 23px;
+  font-size: 26px;
   vertical-align: 15px;
+}
+
+.features__text {
+  margin-top: 19px;
+
+  line-height: 18px;
 }

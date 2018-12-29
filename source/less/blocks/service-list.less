@@ -1,0 +1,20 @@
+.service-list__item {
+  position: relative;
+
+  margin: 0;
+  margin-top: 24px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 11px;
+    left: -34px;
+
+    display: block;
+    width: 25px;
+    height: 2px;
+
+    background-color: @linkHover;
+  }
+}
