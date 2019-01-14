@@ -37,160 +37,160 @@
     </header>
     <main class="catalog">
       <h1 class="catalog__title">Магазин готовых шаблонов</h1>
-      <section class="catalog__list list">
-        <div class="page-wrapper page-wrapper--catalog">
-          <h2 class="visually-hidden">Фильтр шаблонов</h2>
-          <form class="list__filter filter filter--left" action="#" method="post">
-            <fieldset class="filter__cost cost">
-              <legend class="cost__title legend-catalog">Стоимость:</legend>
-              <div class="cost__range range">
-                <div class="range__full-bar"></div>
-                <div class="range__value"></div>
-              </div>
-              <div class="wrapper wrapper--cost">
-                <label for="min-cost" class="cost__value cost__value--min">От</label>
-                <input type="text" id="min-cost" class="cost__input cost__input--min" value="0">
-              </div>
-              <div class="wrapper wrapper--cost">
-                <label for="max-value" class="cost__value cost__value--max">До</label>
-                <input type="text" id="max-value" class="cost__input cost__input--max" value="15 000">
-              </div>
-            </fieldset>
-            <fieldset class="list__grid grid">
-              <legend class="grid__title legend-catalog">Сетка:</legend>
-              <p class="grid__container container">
-                <input type="radio" class="visually-hidden" id="adaptive" name="grid" value="adaptive" checked>
-                <span class="container__custom-radio"></span>
-                <label for="adaptive" class="container__label">Адаптивная</label>
-              </p>
-              <p class="grid__container container">
-                <input type="radio" class="visually-hidden" id="fixed" name="grid" value="fixed">
-                <span class="container__custom-radio"></span>
-                <label for="fixed" class="container__label">Фиксированная</label>
-              </p>
-              <p class="grid__container container">
-                <input type="radio" class="visually-hidden" id="responsive" name="grid" value="responsive">
-                <span class="container__custom-radio"></span>
-                <label for="responsive" class="container__label">Резиновая</label>
-              </p>
-            </fieldset>
-            <fieldset class="list__details details">
-              <legend class="details__title legend-catalog">Особенности:</legend>
-              <p class="details__container container">
-                <input type="checkbox" class="visually-hidden" id="slider" name="slider" checked>
-                <span class="container__custom-checkbox"></span>
-                <label for="slider" class="container__label">Слайдер</label>
-              </p>
-              <p class="details__container container">
-                <input type="checkbox" class="visually-hidden" id="features" name="features">
-                <span class="container__custom-checkbox"></span>
-                <label for="features" class="container__label">Блок преимуществ</label>
-              </p>
-              <p class="details__container container">
-                <input type="checkbox" class="visually-hidden" id="news" name="news" checked>
-                <span class="container__custom-checkbox"></span>
-                <label for="news" class="container__label">Новости</label>
-              </p>
-              <p class="details__container container">
-                <input type="checkbox" class="visually-hidden" id="gallery" name="gallery">
-                <span class="container__custom-checkbox"></span>
-                <label for="gallery" class="container__label">Галерея</label>
-              </p>
-              <p class="details__container container">
-                <input type="checkbox" class="visually-hidden" id="goods" name="goods">
-                <span class="container__custom-checkbox"></span>
-                <label for="goods" class="container__label">Корзина</label>
-              </p>
-              <button type="sumbit" class="search">Показать</button>
-            </fieldset>
-          </form>
-          <form action="#" class="list__filter filter filter--right">
-            <fieldset class="filter__sort sort">
-            <div class="filter__templates-wrapper">
-              <legend class="legend-catalog visually-hidden">Сортировать:</legend>
-              <p class="sort__container container">
-                <b class="sort__title">Сортировать:</b>
-                <a class="sort__link sort__link--active">По цене</a>
-                <a href="#" class="sort__link">По типу</a>
-                <a href="#" class="sort__link">По названию</a>
-                <a href="#" class="sort__value">
-                  <span class="visually-hidden">По убыванию</span>
-                </a>
-                <a href="#" class="sort__value">
-                  <span class="visually-hidden">По возрастанию</span>
-                </a>
-              </p>
-              <div class="sort__template template">
-                <a class="template__link">
-                  <img src="img/img-sedona.jpg" width="360" height="576" alt="Проект Седона" class="template__img">
-                </a>
-                <section class="template__info info">
-                  <h3 class="info__title">Sedona</h3>
-                  <p class="info__description">Информационный сайт для туристов</p>
-                  <a href="#" class="info__cost">9 900 руб.</a>
-                </section>
-              </div>
-              <div class="sort__template template">
-                <a class="template__link">
-                  <img src="img/img-pink.jpg" width="360" height="576" alt="Проект Пинк" class="template__img">
-                </a>
-                <section class="template__info info">
-                  <h3 class="info__title">Pink App</h3>
-                  <p class="info__description">Продуктовый лендинг приложения для iOS и Android</p>
-                  <a href="#" class="info__cost">9 900 руб.a</a>
-                </section>
-              </div>
-              <div class="sort__template template">
-                <a class="template__link">
-                  <img src="img/img-barbershop.jpg" width="360" height="576" alt="Проект Барбершоп" class="template__img">
-                </a>
-                <section class="template__info info">
-                  <h3 class="info__title">Barbershop</h3>
-                  <p class="info__description">Сайт салона красоты. Для мужчин, да.</p>
-                  <a href="#" class="info__cost">9 900 руб.</a>
-                </section>
-              </div>
-              <div class="sort__template template">
-                <a class="template__link">
-                  <img src="img/img-mishka.jpg" width="360" height="576" alt="Проект Мишка" class="template__img">
-                </a>
-                <section class="template__info info">
-                  <h3 class="info__title">Mishka</h3>
-                  <p class="info__description">Интернет&ndash;магазин вязанных игрушек</p>
-                  <a href="#" class="info__cost">9 900 руб.</a>
-                </section>
-              </div>
-              <div class="sort__template template">
-                <a class="template__link">
-                  <img src="img/img-aplus.jpg" width="360" height="576" alt="Проект А Плюс" class="template__img">
-                </a>
-                <section class="template__info info">
-                  <h3 class="info__title">A Plus</h3>
-                  <p class="info__description">Лендинг курсов повышения квалификации</p>
-                  <a href="#" class="info__cost">9 900 руб.</a>
-                </section>
-              </div>
-              <div class="sort__template template">
-                <a class="template__link">
-                  <img src="img/img-kvast.jpg" width="360" height="576" alt="Проект Кваст" class="template__img">
-                </a>
-                <section class="template__info info">
-                  <h3 class="info__title">Кваст</h3>
-                  <p class="info__description">Промо&ndash;сайт производителя крафтового кваса</p>
-                  <a href="#" class="info__cost">9 900 руб.</a>
-                </section>
-              </div>
-              <div class="sort__paginator paginator">
-                <a class="paginator__page paginator__page--active">1</a>
-                <a href="" class="paginator__page">2</a>
-                <a href="" class="paginator__page">3</a>
-                <a href="" class="paginator__page paginator__page--next">Следующая</a>
-              </div>
+      <div class="page-wrapper page-wrapper--catalog">
+        <form class="catalog__filter">
+          <h2 class="visually-hidden">Фильтр</h2>
+          <section class="filter__cost cost">
+            <h3>Стоимость:</h3>
+            <div class="cost__range range">
+              <div class="range__bar"></div>
+              <div class="range__pin"></div>
             </div>
-            </fieldset>
-          </form>
-        </div>
-      </section>
+            <p class="range__value">
+              <label class="range__label" for="range-min">От:</label>
+              <input id="range-min" class="range__cost range__cost--min" type="text" value="0">
+              <label class="range__label range__label--max" for="range-max">До:</label>
+              <input id="range-max" class="range__cost range__cost--max" type="text" value="15 000">
+            </p>
+          </section>
+          <section class="filter__template template">
+            <h3>Сетка:</h3>
+            <p class="template__wrapper">
+              <input id="adaptive-template" type="radio" name="template" value="adaptive" class="template-input visually-hidden" checked>
+              <span class="template__custom-radio"></span>
+              <label class="template__label" for="adaptive-template">Адаптивная</label>
+            </p>
+            <p class="template__wrapper">
+              <input id="static-template" type="radio" name="template" value="static" class="template-input visually-hidden">
+              <span class="template__custom-radio"></span>
+              <label class="template__label" for="static-template">Фиксированная</label>
+            </p>
+            <p class="template__wrapper">
+              <input id="responsive-template" type="radio" name="template" value="responsive" class="template-input visually-hidden">
+              <span class="template__custom-radio"></span>
+              <label class="template__label" for="responsive-template">Резиновая</label>
+            </p>
+          </section>
+          <section class="filter__details details">
+            <h3>Особенности:</h3>
+            <p class="details__wrapper">
+              <input type="checkbox" id="slider" class="visually-hidden" value="slider" checked>
+              <span class="details__custom-checkbox"></span>
+              <label class="details__label" for="slider">Слайдер</label>
+            </p>
+            <p class="details__wrapper">
+              <input type="checkbox" id="features" class="visually-hidden" value="features">
+              <span class="details__custom-checkbox"></span>
+              <label class="features__label" for="features">Блок преимуществ</label>
+            </p>
+            <p class="details__wrapper">
+              <input type="checkbox" id="news" class="visually-hidden" value="news" checked>
+              <span class="details__custom-checkbox"></span>
+              <label class="details__label" for="news">Новости</label>
+            </p>
+            <p class="details__wrapper">
+              <input type="checkbox" id="gallery" class="visually-hidden" value="gallery">
+              <span class="details__custom-checkbox"></span>
+              <label class="details__label" for="gallery">Галерея</label>
+            </p>
+            <p class="details__wrapper">
+              <input type="checkbox" id="goods" class="visually-hidden" value="goods">
+              <span class="details__custom-checkbox"></span>
+              <label class="details__label" for="goods">Корзина</label>
+            </p>
+          </section>
+          <input type="submit" class="filter__submit" value="Показать">
+        </form>
+        <section class="catalog__sort sort">
+          <h2 class="visually-hidden">Сортировка</h2>
+          <header class="sort__header">
+            <h3 class="sort__title">Сортировать:</h3>
+            <ul class="sort__type">
+              <li>
+                <a class="sort__link">По цене</a>
+              </li>
+              <li>
+                <a class="sort__link" href="#">По типу</a>
+              </li>
+              <li>
+                <a class="sort__link" href="#">По названию</a>
+              </li>
+            </ul>
+            <ul class="sort__value">
+              <li>
+                <a href="#"><span class="visually-hidden">По убыванию</span></a>
+              </li>
+              <li>
+                <a href="#"><span class="visually-hidden">По возрастанию</span></a>
+              </li>
+            </ul>
+          </header>
+          <ul class="sort__progects progects">
+            <li class="progects__item progect">
+              <img src="img/img-sedona.jpg" alt="Седона" widith="360" height="576">
+              <section class="progect__info">
+                <h3 class="progect__title">Sedona</h3>
+                <p class="progect__description">Информационный сайт для туристов</p>
+                <a href="#">9 900 руб.</a>
+              </section>
+            </li>
+            <li class="progects__item progect">
+              <img src="img/img-pink.jpg" alt="Pink app" widith="360" height="576">
+              <section class="progect__info">
+                <h3 class="progect__title">Pink app</h3>
+                <p class="progect__description">Продуктовый лендинг приложения для iOS и Android</p>
+                <a href="#">9 900 руб.</a>
+              </section>
+            </li>
+            <li class="progects__item progect">
+              <img src="img/img-barbershop.jpg" alt="Barbershop" widith="360" height="576">
+              <section class="progect__info">
+                <h3 class="progect__title">Barbershop</h3>
+                <p class="progect__description">Сайт салона красоты. Для мужчин, да.</p>
+                <a href="#">9 900 руб.</a>
+              </section>
+            </li>
+            <li class="progects__item progect">
+              <img src="img/img-mishka.jpg" alt="Mishka" widith="360" height="576">
+              <section class="progect__info">
+                <h3 class="progect__title">Mishka</h3>
+                <p class="progect__description">Интернет-магазин вязанных игрушек</p>
+                <a href="#">9 900 руб.</a>
+              </section>
+            </li>
+            <li class="progects__item progect">
+              <img src="img/img-aplus.jpg" alt="A Plus" widith="360" height="576">
+              <section class="progect__info">
+                <h3 class="progect__title">A Plus</h3>
+                <p class="progect__description">Лендинг курсов повышения квалификации</p>
+              <a href="#">9 900 руб.</a>
+              </section>
+            </li>
+            <li class="progects__item progect">
+              <img src="img/img-kvast.jpg" alt="Кваст" widith="360" height="576">
+              <section class="progect__info">
+                <h3 class="progect__title">Кваст</h3>
+                <p class="progect__description">Промо-сайт производителя крафтового кваса</p>
+                <a href="#">9 900 руб.</a>
+              </section>
+            </li>
+          </ul>
+          <ul class="sort__paginator paginator">
+            <li class="paginator__item">
+              <a class="paginator__link paginator__link--active">1</a>
+            </li>
+            <li class="paginator__item">
+              <a class="paginator__link" href="#">2</a>
+            </li>
+            <li class="paginator__item">
+              <a class="paginator__link" href="#">3</a>
+            </li>
+            <li class="paginator__item">
+              <a class="paginator__link paginator__link--next-page" href="#">Следующая</a>
+            </li>
+          </ul>
+        </section>
+      </div>
     </main>
     <footer class="footer">
       <section class="footer__map map">
