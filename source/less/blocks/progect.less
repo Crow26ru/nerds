@@ -2,8 +2,10 @@
   position: relative;
 
   &:hover,
-  &:focus {
+  &:focus,
+  &:focus-within {
     box-shadow: 0px 6px 15px 0px rgba(0, 1, 1, 0.25);
+    outline: none;
 
     &::before {
       background-color: #4d4d4d;
@@ -12,7 +14,8 @@
   }
 
   &:hover > .progect__info,
-  &:focus > .progect__info {
+  &:focus > .progect__info,
+  &:focus-within > .progect__info {
     bottom: 0;
   }
 
@@ -111,5 +114,6 @@
   &:hover,
   &:focus {
     background-color: #e74246;
+    outline: none;
   }
 }
