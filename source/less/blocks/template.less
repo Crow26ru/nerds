@@ -39,6 +39,7 @@
 }
 
 .template-input {
+
   &:checked + .template__label::after {
     top: 7px;
     left: 9px;
@@ -57,11 +58,11 @@
     color: #000000;
   }
 
-  &:checked:focus + .template__label:before {
+  &:checked:focus + .template__label::before {
     border-color: #4d4d4d;
   }
 
-  &:checked:focus + .template__label:after {
+  &:checked:focus + .template__label::after {
     background-color: #4d4d4d;
   }
 
