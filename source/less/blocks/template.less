@@ -64,4 +64,16 @@
   &:checked:focus + .template__label:after {
     background-color: #4d4d4d;
   }
+
+  &:disabled + .template__label {
+    color: fade(#283136, 30%);
+  }
+
+  &:disabled + .template__label::before {
+    border-color: #ededed;
+  }
+
+  &:disabled + .template__label::after {
+    background-color: #ededed;
+  }
 }
