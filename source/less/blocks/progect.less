@@ -13,7 +13,7 @@
 
   &:hover > .progect__info,
   &:focus > .progect__info {
-    display: block;
+    bottom: 0;
   }
 
   &::before,
@@ -52,10 +52,9 @@
 
 .progect__info {
   position: absolute;
-  bottom: 0;
+  bottom: -100%;
   left: 0;
 
-  display: none;
   padding-bottom: 43px;
   width: 360px;
 
@@ -108,4 +107,9 @@
   color: #ffffff;
 
   background-color: #fb565a;
+
+  &:hover,
+  &:focus {
+    background-color: #e74246;
+  }
 }
