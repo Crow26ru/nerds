@@ -25,5 +25,28 @@
 }
 
 .header__goods {
+  position: relative;
   margin-top: 29px;
+  padding-bottom: 6px;
+  padding-left: 40px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 4px;
+    left: 0;
+
+    display: block;
+    width: 15px;
+    height: 15px;
+
+    background: url("../img/cart-icon.svg") no-repeat 0 0;
+
+    opacity: 0.35;
+  }
+
+  &--active {
+    border-bottom: 2px solid #fb565a;
+  }
 }
