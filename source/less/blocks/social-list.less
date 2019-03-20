@@ -8,10 +8,31 @@
 }
 
 .social-list__link {
+  position: relative;
+
   display: block;
   border-radius: 50%;
   width: 80px;
   height: 80px;
 
   background-color: #e1e1e1;
+}
+
+.social-list__svg {
+  position: absolute;
+
+  &--vk {
+    top: 32px;
+    left: 25px;
+  }
+
+  &--fb {
+    top: 28px;
+    left: 33px;
+  }
+
+  &--instagram {
+    top: 29px;
+    left: 29px;
+  }
 }
